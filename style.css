@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* some Variables */
 :root {
   --green-color: #3cb815;
@@ -55,7 +59,7 @@ header {
   justify-content: space-between;
   background: var(--bg-color);
   box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
-  padding: 20px 100px;
+  padding: 20px 40px;
   transition: 0.5s;
 }
 
@@ -132,13 +136,15 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 .container img {
   width: 400px;
   position: absolute;
-  bottom: -500px;
-  right: 200px;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
 }
 
 .home-text {
@@ -727,3 +733,11 @@ header {
   }
 
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 14px 20px;
+  }
+}
+
+
