@@ -11,6 +11,10 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* some Variables */
 :root {
   --green-color: #3cb815;
@@ -732,4 +736,5 @@ header {
     padding: 14px 20px;
   }
 }
+
 
