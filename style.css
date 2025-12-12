@@ -132,7 +132,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .container img {
   width: 400px;
@@ -725,4 +725,5 @@ header {
   .categories-container {
     gap: 1.5rem;
   }
+
 }
